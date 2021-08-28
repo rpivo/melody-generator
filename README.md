@@ -13,5 +13,5 @@ pip install -r requirements.txt
 To run tests:
 
 ```sh
-pytest tests
+pytest tests --verbose
 ```
