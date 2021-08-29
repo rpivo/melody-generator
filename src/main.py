@@ -7,8 +7,7 @@ from random import randint
 
 
 def generate_melody():
-    melody = [0, 0, 0, 0, 0, 0, 0, 0]
-    return melody
+    return [get_random_number_between_zero_and_eight() for n in range(0, 8)]
 
 
 def get_random_number_between_zero_and_eight():
