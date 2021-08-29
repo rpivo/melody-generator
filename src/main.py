@@ -12,3 +12,8 @@ def generate_melody():
 
 def get_random_number_between_zero_and_eight():
     return randint(0, 8)
+
+
+def get_zero_or_eight():
+    n = randint(0, 1)
+    return n if n == 0 else 8
