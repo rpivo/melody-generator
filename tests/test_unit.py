@@ -37,3 +37,8 @@ def test_get_random_number_between_zero_and_eight_returns_an_integer_less_than_o
 def test_get_zero_or_eight_returns_an_integer():
     result = get_zero_or_eight()
     assert type(result) is int
+
+
+def test_get_zero_or_eight_returns_either_zero_or_eight():
+    result = get_zero_or_eight()
+    assert result == 0 or result == 8
