@@ -19,3 +19,8 @@ def test_get_random_number_between_zero_and_eight_returns_an_integer():
 def test_get_random_number_between_zero_and_eight_returns_an_integer_greater_than_or_equal_to_zero():
     result = get_random_number_between_zero_and_eight()
     assert result >= 0
+
+
+def test_get_random_number_between_zero_and_eight_returns_an_integer_less_than_or_equal_to_eight():
+    result = get_random_number_between_zero_and_eight()
+    assert result <= 8
