@@ -18,6 +18,11 @@ def test_generate_melody_returns_a_list_with_the_first_item_being_either_zero_or
     assert result[0] == 0 or result[0] == 7
 
 
+def test_generate_melody_returns_a_list_with_the_last_item_being_either_zero_or_seven():
+    result = generate_melody()
+    assert result[-1] == 0 or result[-1] == 7
+
+
 # get_random_number_between_zero_and_seven()
 
 
