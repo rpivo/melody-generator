@@ -7,13 +7,19 @@ from random import randint
 
 
 def generate_melody():
-    return [get_random_number_between_zero_and_eight() for n in range(0, 8)]
+    l = []
+    for i in range(0, 8):
+        if i == 0 or i == 7:
+            l.append(get_zero_or_seven())
+        else:
+            l.append(get_random_number_between_zero_and_seven())
+    return l
 
 
-def get_random_number_between_zero_and_eight():
-    return randint(0, 8)
+def get_random_number_between_zero_and_seven():
+    return randint(0, 7)
 
 
-def get_zero_or_eight():
+def get_zero_or_seven():
     n = randint(0, 1)
-    return n if n == 0 else 8
+    return n if n == 0 else 7
