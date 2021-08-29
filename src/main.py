@@ -11,5 +11,5 @@ def generate_melody():
     return melody
 
 
-def get_random_number_between_one_and_eight():
-    return randint(1, 8)
+def get_random_number_between_zero_and_eight():
+    return randint(0, 8)
